@@ -9,7 +9,7 @@
 #include "queen.h"
 #include "rook.h"
 
-int main()
+int main()// merge
 {
     system("clear");
     char s[9][9], k[5];
