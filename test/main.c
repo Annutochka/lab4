@@ -356,21 +356,6 @@ int expected = 0;
 ASSERT_EQUAL(expected,result);
 }
 
-CTEST (q, Incorrect_q)
-{
-char k[5], s[9][9];
-k[0] = 'd';
-k[1] = '8';
-k[2] = '-';
-k[3] = 'c';
-k[4] = '8';  
-s[8][4] = 'q';
-s[5][4] = 32;
-int result = queen(k, s);
-int expected = 1;
-ASSERT_EQUAL(expected,result);
-}
-
 int main(int argc, const char** argv) 
 {
     int test_res = ctest_main(argc, argv);
