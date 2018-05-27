@@ -176,21 +176,6 @@ int expected = 0;
 ASSERT_EQUAL(expected,result);
 }
 
-CTEST (r, Incorrect_r)
-{
-char k[5], s[9][9];
-k[0] = 'h';
-k[1] = '8';
-k[2] = '-';
-k[3] = 'g';
-k[4] = '5';  
-s[1][8] = 'r';
-s[5][8] = 32;
-int result = rook(k, s);
-int expected = 1;
-ASSERT_EQUAL(expected,result);
-}
-
 CTEST (R, Incorrect_R)
 {
 char k[5], s[9][9];
@@ -251,21 +236,6 @@ int expected = 1;
 ASSERT_EQUAL(expected,result);
 }
 
-CTEST (H, Incorrect_H)
-{
-char k[5], s[9][9];
-k[0] = 'h';
-k[1] = '1';
-k[2] = '-';
-k[3] = 'g';
-k[4] = '6';  
-s[1][8] = 'H';
-s[5][8] = 32;
-int result = Horse(k, s);
-int expected = 1;
-ASSERT_EQUAL(expected,result);
-}
-
 CTEST (e, Correct_e)
 {
 char k[5], s[9][9];
@@ -307,21 +277,6 @@ k[4] = '4';
 s[8][6] = 'e';
 s[5][8] = 32;
 int result = el(k, s);
-int expected = 1;
-ASSERT_EQUAL(expected,result);
-}
-
-CTEST (E, Incorrect_E)
-{
-char k[5], s[9][9];
-k[0] = 'f';
-k[1] = '1';
-k[2] = '-';
-k[3] = 'g';
-k[4] = '6';  
-s[1][6] = 'E';
-s[5][8] = 32;
-int result = El(k, s);
 int expected = 1;
 ASSERT_EQUAL(expected,result);
 }
@@ -371,21 +326,6 @@ int expected = 1;
 ASSERT_EQUAL(expected,result);
 }
 
-CTEST (K, Incorrect_K)
-{
-char k[5], s[9][9];
-k[0] = 'e';
-k[1] = '1';
-k[2] = '-';
-k[3] = 'e';
-k[4] = '3';  
-s[1][5] = 'K';
-s[2][5] = 32;
-int result = King(k, s);
-int expected = 1;
-ASSERT_EQUAL(expected,result);
-}
-
 CTEST (q, Correct_q)
 {
 char k[5], s[9][9];
@@ -427,21 +367,6 @@ k[4] = '8';
 s[8][4] = 'q';
 s[5][4] = 32;
 int result = queen(k, s);
-int expected = 1;
-ASSERT_EQUAL(expected,result);
-}
-
-CTEST (Q, Incorrect_Q)
-{
-char k[5], s[9][9];
-k[0] = 'd';
-k[1] = '1';
-k[2] = '-';
-k[3] = 'c';
-k[4] = '8';  
-s[1][4] = 'Q';
-s[5][4] = 32;
-int result = Queen(k, s);
 int expected = 1;
 ASSERT_EQUAL(expected,result);
 }
