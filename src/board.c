@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "board.h"
+#include "board.h"//1
 void fillboard(char s[9][9])
 {
     s[1][1] = 'R';
