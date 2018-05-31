@@ -4,7 +4,7 @@ FLAGS =  -Wall -Werror -std=c99
 BUILD = build/p.o build/P.o build/board.o build/rook.o build/horse.o build/el.o build/king.o build/queen.o
 SRC = src/p.h src/P.h src/board.h src/rook.h src/horse.h src/el.h src/king.h src/queen.h
 
-.PHONY: clean
+.PHONY: clean//
 
 all: bin build test default 
 
